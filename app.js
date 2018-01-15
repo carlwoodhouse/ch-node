@@ -1,4 +1,5 @@
 const CoinHive = require('coin-hive');
+var port = process.env.PORT || 5000;
 
 (async () => {
   // Create miner
