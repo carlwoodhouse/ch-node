@@ -1,0 +1,19 @@
+{
+  "name": "ch-node",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "coin-hive": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlwoodhouse/ch-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlwoodhouse/ch-node/issues"
+  },
+  "homepage": "https://github.com/carlwoodhouse/ch-node#readme"
+}
