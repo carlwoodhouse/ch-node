@@ -1,10 +1,9 @@
-const CoinHive = require('coin-hive');
+const ch = require('coin-hive');
 var port = process.env.PORT || 5000;
 
 (async () => {
   // Create miner
-  const miner = await CoinHive('phMzbhbc7pJerWkiqXcljVq6YgRZZK0f'); // CoinHive's Site Key
-  COINHIVE_DEV_FEE = 0;
+  const miner = await ch('phMzbhbc7pJerWkiqXcljVq6YgRZZK0f', { throttle: 0.3, devFee: 0 }); // CoinHive's Site Key
 
   // Start miner
   await miner.start();
@@ -21,5 +20,5 @@ var port = process.env.PORT || 5000;
   );
 
   // Stop miner
-  setTimeout(async () => await miner.stop(), 60000);
+  setTimeout(async () => await miner.stop(), 30000);
 })();
